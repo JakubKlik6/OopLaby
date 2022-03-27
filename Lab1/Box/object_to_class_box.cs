@@ -9,9 +9,9 @@ namespace ConsoleApp1
         {
             Box box = new Box(10, 10, 10);
 
-            box.Volume();
-
             Console.WriteLine(box.ToString());
+
+            Console.WriteLine("Volume \n" + box.Volume());
 
             Console.ReadKey(true);
         }
