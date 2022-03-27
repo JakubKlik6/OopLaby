@@ -11,12 +11,11 @@ namespace ConsoleApp1
     class Student
 
     {
-        private string name, surname;
+        private string surname;
         private int degree_1, degree_2;
 
-        public Student(string name, string surname, int degree_1, int degree_2)
+        public Student(string surname, int degree_1, int degree_2)
         {
-            this.name = name;
             this.surname = surname;
             this.degree_1 = degree_1;
             this.degree_2 = degree_2;
