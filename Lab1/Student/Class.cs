@@ -28,7 +28,7 @@ namespace ConsoleApp1
 
         public override string ToString()
         {
-            return $"Nazwisko: {surname}, ocena1: {degree_1}, ocena2: {degree_2}, średnia ocen: {Mean()}";
+            return $"Nazwisko: {surname}, ocenay: {degree_1} {degree_2}, średnia ocen: {Mean()}";
         }
     }
 
