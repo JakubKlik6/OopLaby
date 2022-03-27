@@ -11,20 +11,18 @@ namespace ConsoleApp1
 
     {
         private int lenght, width, heigh;
-        private double volume;
-
 
         public Box(int lenght,int width, int heigh)
         {
             this.lenght = lenght;
             this.width = width;
             this.heigh = heigh;
-            this.volume = 0;
         }
 
-        public void Volume()
+        public int Volume()
         {
-            volume = lenght * width * heigh;
+            int volume = lenght * width * heigh;
+            return volume;
         }
 
         public override string ToString()
