@@ -21,7 +21,7 @@ namespace ConsoleApp1
         public override string ToString()
         {
             return $"Nazwa: \n {nazwa}" +
-                    $"Cena: ]n {cena}";
+                    $"Cena: \n {cena}";
         }
 
     }
