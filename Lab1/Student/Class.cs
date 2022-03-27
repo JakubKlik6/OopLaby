@@ -21,7 +21,7 @@ namespace ConsoleApp1
             this.degree_2 = degree_2;
         }
 
-        public int Mean()
+        public double Mean()
         {
             return ((degree_1 + degree_2) / 2);
         }
