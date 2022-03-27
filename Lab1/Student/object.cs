@@ -7,7 +7,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Student student = new Student("Jakub", "Klik", 5, 5);
+            Student student = new Student("Klik", 5, 5);
 
             Console.WriteLine(student.ToString());
 
