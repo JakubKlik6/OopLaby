@@ -20,18 +20,24 @@ namespace Programowanie
 
         public int GetMoney(int amount)
         {
-            if (balance > amount)
+            if (block == false)
             {
-                balance -= amount;
-                return balance;
-            }
-            else block = true;
-            return 0;
+                if (balance > amount)
+                {
+                    balance -= amount;
+                    return balance;
+                }
+                else block = true;
+                return 0;
+            } return 0;
         }
         public int GiveMoney(int amount)
         {
-            balance += amount;
-            return amount;
+            if (block == false)
+            {
+                balance += amount;
+                return amount;
+            } return 0;
         }
         public void AccountBalance()
         {
