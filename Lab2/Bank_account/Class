@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Programowanie
+{
+    class Bank_account
+    {
+        private string clientName, accountNumber;
+        private int balance;
+
+        public Bank_account(string clientName, string accountNumber)
+        {
+            this.clientName = clientName;
+            this.accountNumber = accountNumber;
+            this.balance = 0;
+        }
+
+        public int GetMoney(int amount)
+        {
+            if (balance > amount)
+            {
+                balance -= amount;
+                return balance;
+            }
+            return 0;
+        }
+        public int GiveMoney(int amount)
+        {
+            balance += amount;
+            return amount;
+        }
+        public void AccountBalance()
+        {
+            Console.WriteLine("Account Balance: {0}",balance);
+        }
+
+        public override string ToString()
+        {
+            return $"Client: {clientName}\nAccount Number: {accountNumber} \nAccount Balance: {balance}";
+        }
+
+    }
+}
