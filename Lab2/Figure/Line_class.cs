@@ -13,7 +13,7 @@ namespace Programowanie
         {
             for(int i = 1; i <= this.width; i++)
             {
-                Console.WriteLine("-");
+                Console.Write("-");
             }
             Console.WriteLine();
         }
