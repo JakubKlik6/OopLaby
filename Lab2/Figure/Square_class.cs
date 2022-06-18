@@ -10,13 +10,16 @@ namespace Programowanie
 
         public override void Draw()
         {
-            for (int i = 1; i <= this.width; i++)
+            Console.WriteLine();
+            for (int i = 1; i <= width; i++)
             {
-                Console.WriteLine("*");
+                for (int j = 1; j <= width; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
             }
             Console.WriteLine();
         }
     }
-
-
 }
