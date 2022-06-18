@@ -8,16 +8,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Bank_account jakubAccount = new Bank_account("Jakub", "Numer konta");
+            Bank_account jakubAccount = new Bank_account("Jakub", "123456789");
+
+            jakubAccount.GiveMoney(500);
+            jakubAccount.GetMoney(600);
+            jakubAccount.AccountBalance();
 
             Console.WriteLine(jakubAccount);
 
             Console.WriteLine("----------");
             Console.WriteLine("");
-
-            jakubAccount.GiveMoney(500);
-            jakubAccount.GetMoney(200);
-            jakubAccount.AccountBalance();
         }
 
     }
