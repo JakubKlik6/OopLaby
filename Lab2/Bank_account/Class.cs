@@ -6,13 +6,14 @@ namespace Programowanie
 {
     class Bank_account
     {
-        private string clientName, accountNumber;
+        private BankClient bankClient;
+        private string  accountNumber;
         private int balance;
         private bool block;
 
-        public Bank_account(string clientName, string accountNumber)
+        public Bank_account(BankClient bankClient, string accountNumber)
         {
-            this.clientName = clientName;
+            this.bankClient = bankClient;
             this.accountNumber = accountNumber;
             this.balance = 0;
             this.block = false;
@@ -51,7 +52,7 @@ namespace Programowanie
 
         public override string ToString()
         {
-            return $"Client: {clientName}\nAccount Number: {accountNumber} \nAccount Balance: {balance} \nAccount Status: {block}";
+            return $"Client: {bankClient}\nAccount Number: {accountNumber} \nAccount Balance: {balance} \nAccount Status: {block}";
         }
 
     }
