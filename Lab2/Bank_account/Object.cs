@@ -8,7 +8,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Bank_account jakubAccount = new Bank_account("Jakub", "123456789");
+            BankClient bankclient = new BankClient("Jakub", "Klik", 23);
+            Bank_account jakubAccount = new Bank_account(bankclient, "123456789");
 
             jakubAccount.GiveMoney(500);
             jakubAccount.GetMoney(600);
